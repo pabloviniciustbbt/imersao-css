@@ -1,0 +1,54 @@
+body {
+    background-image: url("background.png");
+    background-size: 100vw auto;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+}
+
+img {
+    width: 200px;
+    heidgh: auto;
+    border-radius: 100px;
+    border: solid #FFFFFF;
+}
+
+.site-title {
+    font-family: monospace;
+    font-size: 50px;
+}
+
+.site-subtitle {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.menu{
+  
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    font-family: monospace;
+    font-size: 16px;
+    justify-content: space-around;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: monospace;
+}
