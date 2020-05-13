@@ -1,30 +1,71 @@
+/* soft reset do CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    background-attachment: fixed;
     background-image: url("background.png");
     background-size: 100vw auto;
     color: #FFFFFF;
+    font-size: 10px;
     text-align: center;
     text-decoration: none;
 }
 
+/* se a tela tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px) {
+    body{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 600px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+header {
+    align-items: center;
+    display: flex;
+    height: 75vh;
+    justify-content: center;
+    flex-direction: column;
+}
+
 img {
+    text-align: center;
     width: 200px;
-    heidgh: auto;
+    height: auto;
     border-radius: 100px;
     border: solid #FFFFFF;
 }
 
+.site-subtitle,
 .site-title {
+    color: #FFFFFF;
     font-family: monospace;
-    font-size: 50px;
 }
 
 .site-subtitle {
     font-family: monospace;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 .menu{
-  
+  background-color: #FFFFFF;
+  opacity: 1;  
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
 }
 
 .menu li {
@@ -39,7 +80,7 @@ img {
 }
 
 a {
-    color: #FFFFFF;
+    color: #000000;
     text-decoration: none;
 }
 
@@ -52,3 +93,13 @@ p {
     font-size: 16px;
     font-family: monospace;
 }
+
+
+.img-portfolio {
+    text-align: center;
+    height: auto;
+    width: 500px;
+    border-radius: 0px;
+    border: none;
+}
+
