@@ -10,21 +10,21 @@ body {
     background-image: url("background.png");
     background-size: 100vw auto;
     color: #FFFFFF;
-    font-size: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
     text-align: center;
     text-decoration: none;
 }
 
-/* se a tela tiver pelo menos 400px vai carregar estes estilos */
 @media (min-width: 400px) {
     body{
-        font-size: 14px;
+        font-size: 18px;
     }
 }
 
 @media (min-width: 600px) {
     body{
-        font-size: 18px;
+        font-size: 24px;
     }
 }
 
@@ -36,6 +36,37 @@ header {
     flex-direction: column;
 }
 
+.menu{
+  background-color: #FFFFFF; 
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
 img {
     text-align: center;
     width: 300px;
@@ -45,9 +76,19 @@ img {
 }
 
 @media (max-width: 500px) {
+  img {
+      text-align: center;
+      width: 200px;
+      height: auto;
+      border-radius: 200px;
+      border: solid #FFFFFF;
+  }
+} 
+
+@media (max-width: 450px) {
     img {
         text-align: center;
-        width: 200px;
+        width: 150px;
         height: auto;
         border-radius: 200px;
         border: solid #FFFFFF;
@@ -77,64 +118,45 @@ img {
 .site-subtitle,
 .site-title {
     color: #FFFFFF;
-    font-family: monospace;
+    font-family: 'Muli', sans-serif;
 }
 
 .site-subtitle {
-    font-family: monospace;
+  font-family: 'Raleway', sans-serif;
     font-size: 1em;
 }
 
-.menu{
-  background-color: #FFFFFF;
-  opacity: 1;  
-  position: fixed;
-  top: 0;
-  width: 100vw;
+.projetos h2 {
+  font-family: 'Lato', sans-serif;
 }
 
-.menu a {
-    display: block;
-    padding: 10px 20px;
+.projetos {
+  padding: 2em;
+  height: 100vh;
 }
 
-.menu li {
-    list-style: none;
+.projetos figure {
+  text-align: center;
 }
 
-.menu ul {
-    display: flex;
-    font-family: monospace;
-    font-size: 16px;
-    justify-content: space-around;
+.projetos .grid {
+  display: grid;
+  gap: 2em;
+  grid-template-columns: 240px 240px;
+  justify-content: center;
 }
 
-a {
-    color: #000000;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-p {
-    color: #FFFFFF;
-    font-size: 16px;
-    font-family: monospace;
-}
-
-
-.img-portfolio {
-    text-align: center;
-    height: auto;
-    width: 500px;
-    border-radius: 0px;
-    border: none;
+.img-projetos {
+  height: 200px;
+  width: 275px;
+  border-radius: 0px;
+  border: none;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 800px) {
-    .img-portfolio {
+    .img-projetos {
       height: 100vh;
       height: auto;
       width: 500px;;
@@ -142,7 +164,7 @@ p {
   }
 
 @media (max-width: 700px) {
-    .img-portfolio {
+    .img-projetos {
       height: 100vh;
       height: auto;
       width: 400px;;
@@ -150,7 +172,7 @@ p {
   }
 
 @media (max-width: 600px) {
-    .img-portfolio {
+    .img-projetos {
       height: 100vh;
       height: auto;
       width: 300px;;
@@ -158,7 +180,7 @@ p {
   } 
 
   @media (max-width: 500px) {
-    .img-portfolio {
+    .img-projetos {
       height: 100vh;
       height: auto;
       width: 250px;;
