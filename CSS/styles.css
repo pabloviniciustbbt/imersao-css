@@ -11,7 +11,8 @@ body {
     background-size: 100vw auto;
     color: #FFFFFF;
     font-family: 'Lato', sans-serif;
-    font-size: 12px;
+    font-size: 12,
+    +++\\\\\\\\\\\\\\\\\\\\px;
     text-align: center;
     text-decoration: none;
 }
@@ -126,9 +127,13 @@ img {
     font-size: 1em;
 }
 
+.projetos a{
+  color: #FFFFFF;
+}
+
 .projetos h2 {
   font-family: 'Lato', sans-serif;
-}
+} 
 
 .projetos {
   padding: 2em;
@@ -141,14 +146,28 @@ img {
 
 .projetos .grid {
   display: grid;
-  gap: 2em;
-  grid-template-columns: 240px 240px;
+  gap: 7em;
+  grid-template-columns: repeat(3, 260px);
   justify-content: center;
 }
 
+@media (min-width: 800px) {
+  .projeto .grid {
+    gap: 5em;
+    grid-template-columns: repeat(2, 260px);
+  }
+}
+
+@media (min-width: 600px) {
+  .projeto .grid {
+    gap: 5em;
+    grid-template-columns: repeat(1, 260px);
+  }
+}
+
 .img-projetos {
-  height: 200px;
-  width: 275px;
+  height: 240px;
+  width: 360px;
   border-radius: 0px;
   border: none;
   object-fit: cover;
@@ -158,23 +177,23 @@ img {
 @media (max-width: 800px) {
     .img-projetos {
       height: 100vh;
-      height: auto;
-      width: 500px;;
+      height: 240px;
+      width: 360px;;
     }
   }
 
 @media (max-width: 700px) {
     .img-projetos {
       height: 100vh;
-      height: auto;
-      width: 400px;;
+      height: 200px;
+      width: 300px;;
     }
   }
 
 @media (max-width: 600px) {
     .img-projetos {
       height: 100vh;
-      height: auto;
+      height: 200px;
       width: 300px;;
     }
   } 
@@ -182,7 +201,7 @@ img {
   @media (max-width: 500px) {
     .img-projetos {
       height: 100vh;
-      height: auto;
+      height: 170px;
       width: 250px;;
     }
   } 
