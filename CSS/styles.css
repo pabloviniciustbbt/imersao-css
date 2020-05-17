@@ -198,3 +198,22 @@ a {
     text-decoration: none;
     text-shadow: 4px 4px #299fb9;
 }
+
+.contato .grid{
+    display: grid;
+    justify-content:center;
+    gap: 2em;
+    grid-template-columns: 150px 150px 150px;
+}
+
+@media(max-width: 880px){
+    .contato .grid{
+        grid-template-columns: 150px 150px;
+    }
+}
+
+@media(max-width: 600px){
+    .contato .grid{
+        grid-template-columns: 150px;
+         }
+}
