@@ -132,11 +132,40 @@ a {
 
 }
 
+.seta {
+    font-size:40px;
+}
+
+.sobre{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8em;
+    min-height: 20vh;
+}
+
+@media(max-width: 880px){
+    .sobre {
+        padding: 6em;
+    }
+}
+
+.sobre a {
+    color: cyan;
+}
+
+.sobre p {
+    color:#FFFFFF;
+    margin-bottom: -8em;
+    text-align: justify;
+    text-indent: 1.4em;   
+}
+
 .projetos a{
     color: #FFFFFF;
 }
   
-.contato,
+.sobre h2,
+.contato h2,
 .projetos h2 {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -146,6 +175,8 @@ a {
 .projetos {
     padding: 2em;
     min-height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
 }
   
 .projetos figure {
